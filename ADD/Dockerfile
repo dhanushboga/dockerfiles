@@ -5,4 +5,6 @@ ADD https://raw.githubusercontent.com/daws-81s/expense-infra-dev/refs/heads/main
 RUN chmod +x /usr/share/nginx/html/index.html
 ENV course="devops"\
     learner="dhanush"
+LABEL author="kumar"\
+      learner="dhanush"
 CMD ["nginx","-g","daemon off;"]
